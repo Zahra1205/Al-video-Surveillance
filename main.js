@@ -20,7 +20,7 @@ for(var i = 0; i < objects.length; i++){
 
     fill("#000000");
     percent = floor(objects[i].confidence * 100);
-    text("Object : "+objects[i].label+" "+"Percentage : "+percent+"%", objects[i].x, objects[i].y);
+    text("Object : "+objects[i].label+" "+"Percentage : "+percent+"%", objects[i].x+12, objects[i].y+12);
     noFill();
     stroke("#000000");
     rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
